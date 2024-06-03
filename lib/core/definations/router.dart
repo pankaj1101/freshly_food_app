@@ -4,6 +4,7 @@ import 'package:freshly_food_app/view/authentication/forgot_password_screen.dart
 import 'package:freshly_food_app/view/authentication/login/login_screen.dart';
 import 'package:freshly_food_app/view/authentication/otp_screen/otp_screen.dart';
 import 'package:freshly_food_app/view/authentication/signup/signup_screen.dart';
+import 'package:freshly_food_app/view/onboarding_screen/onboarding_screen.dart';
 import 'package:freshly_food_app/view/splash_screen/splash_screen.dart';
 
 class AppRouter {
@@ -19,6 +20,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const ForgotPasswordScreen());
       case RoutesName.otpScreen:
         return MaterialPageRoute(builder: (_) => const OtpScreen());
+      case RoutesName.onBoardingScreen:
+        return MaterialPageRoute(builder: (_) => const OnBoardingScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(
